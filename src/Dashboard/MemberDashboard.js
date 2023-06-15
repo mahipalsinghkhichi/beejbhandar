@@ -4,7 +4,7 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 const MemberDashboard = () => {
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" className='mt-2' style={{ height: "80px", backgroundColor: "#0B0B45" }}>
+      <Navbar collapseOnSelect expand="lg" className='mt-2' style={{ height: "80px", backgroundColor: "#0B0B45" }}>
         <img
           className="rounded-circle border border-light m-2"
           src="beejbhandar image.jpeg"
@@ -26,7 +26,7 @@ const MemberDashboard = () => {
         />
         <Navbar.Collapse
           id='respnsive-navbar-nav'>
-            <Nav className='mr-auto'>
+          <Nav className='mr-auto'>
             <NavDropdown title="Report" id="Nav-Navdropdown-title">
               <NavDropdown.Item>
                 <NavLink to="/AppUser">
@@ -38,8 +38,8 @@ const MemberDashboard = () => {
                   <label className="btn btn-dark">Registration</label>
                 </NavLink>
               </NavDropdown.Item>
-              </NavDropdown>
-              </Nav>
+            </NavDropdown>
+          </Nav>
           <Nav className='mr-auto' style={{ marginLeft: "20px" }}>
             <NavLink to="/">
               <label className="btn btn-dark">SignOUt</label>
@@ -55,8 +55,8 @@ const MemberDashboard = () => {
               <label className="btn btn-dark">Signin</label>
             </NavLink>
           </Nav>
-          </Navbar.Collapse>
-     </Navbar>
+        </Navbar.Collapse>
+      </Navbar>
     </>
   )
 }

@@ -32,7 +32,7 @@ const StateRegis = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (matchid.id) {
-      state.state_id = state_id;
+      state. state_id = state_id;
       database.ref(`state_table/${matchid.id}`).set(state, (err) => {
         if (err) {
           alert("State not updated");

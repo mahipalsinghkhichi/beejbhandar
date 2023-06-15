@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 export const Load_State_Table = 'Load_State_Table';
 export const Load_City_Table = 'Load_City_Table';
 export const Load_Area_Table = 'Load_Area_Table';
@@ -12,7 +11,7 @@ export const Load_Owner_Data = 'Load_Owner_Data';
 export const Admin_Data_Table = "Admin_Data_Table";
 export const Login_user_Data = 'Login_user_Data';
 
-const loadData = 'https://beejbhandarproject-default-rtdb.firebaseio.com';
+const loadData = 'https://beejbhandar-c3990-default-rtdb.firebaseio.com';
 
 export const Load_StateData = () => {
     return async dispatch => {

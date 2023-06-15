@@ -25,7 +25,7 @@ let imgid;
 const AppUser = () => {
     const [state, setState] = useState(initialData);
     const { Loadstate, Loadcity, Loadarea, Loadimage, Ownervar,loginUser } = useSelector(state => state.cartreducer);
-    // console.log("Ownervar,,,,,,,,,,,,,,,,,,",Ownervar);
+    // console.log("Loadcity data,,,,,,,,,,,,,,,,,,",Loadcity);
 
     const dispatch = useDispatch();
     useEffect(() => {
@@ -50,11 +50,12 @@ const AppUser = () => {
         dispatch(Load_Owner_image(stnm, ctnm, arnm));
     }
     cityDataArray = [];
-    Object.keys(Loadcity).map((id, index) => {
-        if (state.state_name === Loadcity[id].state_name) {
-            cityDataArray.push(Loadcity[id].city_name);
-        }
-    })
+Object.key(Loadcity).map((id,index)=>{
+    if(state.state_name===Loadcity[id].state_name){
+        cityDataArray.push(Loadcity[id].city_name)
+    }
+})
+    console.log("cityDataArray...........",cityDataArray);
     areaDataArray = [];
     Object.keys(Loadarea).map((id, index) => {
         if (state.city_name === Loadarea[id].city_name) {
